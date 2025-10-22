@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#FFFFFF">
+  <meta name="description" content="Asesorías personalizadas en Inteligencia Artificial para transformar su negocio. Automatización, agentes de IA, RAG, estrategia y gobierno ético.">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Asesorías en Inteligencia Artificial | Transforme su Negocio">
+  <meta property="og:description" content="Descubra cómo nuestras asesorías en IA pueden automatizar procesos, optimizar decisiones y desbloquear crecimiento exponencial.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/og-image.png">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Asesorías en Inteligencia Artificial">
+  <meta name="twitter:description" content="Transforme su negocio con IA: automatización, agentes inteligentes y decisiones basadas en datos.">
+  <meta name="twitter:image" content="assets/img/og-image.png">
+  
+  <title>Asesorías en Inteligencia Artificial | Transforme su Negocio</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="index.html" class="logo" aria-label="Inicio">Asesorías IA</a>
+      
+      <!-- Desktop Navigation -->
+      <nav class="nav-desktop" aria-label="Navegación principal">
+        <ul>
+          <li><a href="#beneficios">Beneficios</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#casos">Casos de Uso</a></li>
+          <li><a href="#proceso">Proceso</a></li>
+          <li><a href="#testimonios">Testimonios</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="#" class="btn btn-primary" data-action="open-donation">Donar</a></li>
+        </ul>
+      </nav>
+      
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <!-- Theme Toggle -->
+        <button class="theme-toggle" id="theme-toggle" aria-label="Cambiar tema">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+          </svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+          </svg>
+        </button>
+        
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Abrir menú">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu-content">
+      <div class="mobile-menu-header">
+        <span class="logo">Asesorías IA</span>
+        <button class="close-menu" id="close-mobile-menu" aria-label="Cerrar menú">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <nav aria-label="Navegación móvil">
+        <ul>
+          <li><a href="#beneficios">Beneficios</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#casos">Casos de Uso</a></li>
+          <li><a href="#proceso">Proceso</a></li>
+          <li><a href="#testimonios">Testimonios</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li>
+            <button class="theme-toggle" id="theme-toggle-mobile" aria-label="Cambiar tema" style="margin: 1rem 0; width: 100%;">
+              <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+              </svg>
+              <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+              </svg>
+              <span style="margin-left: 0.5rem;">Cambiar Tema</span>
+            </button>
+          </li>
+          <li><a href="#" class="btn btn-primary" data-action="open-donation">Donar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  
+  <!-- Main Content -->
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <h1>Transforme su Negocio con Inteligencia Artificial</h1>
+        <p class="lead">Descubra cómo nuestras asesorías personalizadas en IA pueden automatizar sus procesos, optimizar la toma de decisiones y desbloquear un crecimiento exponencial. Deje que la innovación impulse sus resultados.</p>
+        <div class="hero-cta">
+          <button class="btn btn-primary btn-lg" data-action="open-donation">Donar</button>
+          <a href="#servicios" class="btn btn-secondary btn-lg">Conozca Nuestras Asesorías</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Credibilidad / Impacto Section -->
+    <section class="credibility-section">
+      <div class="container">
+        <div class="credibility-grid">
+          <div class="credibility-intro fade-in">
+            <span class="section-eyebrow">Resultados comprobados</span>
+            <h2>Impacto medible en menos de 90 días</h2>
+            <p>Co-creamos iniciativas de inteligencia artificial con enfoque de negocio, gobierno responsable y métricas continuas. Cada proyecto está respaldado por PMOs híbridas, científicos de datos senior y especialistas en cambio organizacional.</p>
+            <div class="credibility-badges">
+              <span class="credibility-badge">Framework Responsible AI</span>
+              <span class="credibility-badge">Equipo certificado en GenAI</span>
+              <span class="credibility-badge">Alineado a ISO/IEC 42001</span>
+            </div>
+          </div>
+          <div class="credibility-stats">
+            <div class="credibility-stat-card fade-in">
+              <span class="stat-label">Proyectos con ROI positivo</span>
+              <span class="stat-value" data-countup data-target="92" data-suffix="%">0%</span>
+              <p>Resultados cuantificados por las áreas financieras de nuestros clientes.</p>
+            </div>
+            <div class="credibility-stat-card fade-in">
+              <span class="stat-label">Reducción promedio de tiempos</span>
+              <span class="stat-value" data-countup data-target="38" data-suffix="%">0%</span>
+              <p>Automatización avanzada, agentes y copilotos que liberan equipos completos.</p>
+            </div>
+            <div class="credibility-stat-card fade-in">
+              <span class="stat-label">Índice de satisfacción ejecutiva</span>
+              <span class="stat-value" data-countup data-target="9.6" data-decimals="1" data-suffix="/10">0</span>
+              <p>Medición post-proyecto con comités directivos y sponsors.</p>
+            </div>
+            <div class="credibility-stat-card fade-in">
+              <span class="stat-label">Horas liberadas al año</span>
+              <span class="stat-value" data-countup data-target="1200" data-suffix="+">0</span>
+              <p>Equipos con foco reorientado hacia innovación y crecimiento.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="credibility-logos fade-in" aria-label="Empresas y programas que confían en nosotros">
+          <span class="logos-title">Aliados, comunidades y fondos que nos respaldan</span>
+          <div class="logo-marquee">
+            <span class="logo-item">IDB Lab</span>
+            <span class="logo-item">Endeavor ScaleUp</span>
+            <span class="logo-item">Google for Startups</span>
+            <span class="logo-item">AWS Activate</span>
+            <span class="logo-item">SoftBank Latin America Fund</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Beneficios Section -->
+    <section id="beneficios">
+      <div class="container">
+        <h2 class="section-title">¿Por Qué Elegir Nuestras Asesorías en IA?</h2>
+        <div class="cards-grid">
+          <div class="card fade-in">
+            <img src="assets/img/ilustraciones/icon-efficiency.svg" alt="" class="card-icon" aria-hidden="true">
+            <h3>Eficiencia Exponencial y Ahorro de Tiempo</h3>
+            <p>Automatice hasta el 70% de las tareas repetitivas. Libere a su equipo para que se concentre en la estrategia y la creatividad, reduciendo costos operativos y acelerando la productividad en todas las áreas de su negocio.</p>
+          </div>
+          
+          <div class="card fade-in">
+            <img src="assets/img/ilustraciones/icon-decisions.svg" alt="" class="card-icon" aria-hidden="true">
+            <h3>Decisiones Inteligentes Basadas en Datos</h3>
+            <p>Convierta grandes volúmenes de datos en insights accionables en tiempo real. Nuestros modelos de IA analizan tendencias del mercado y comportamientos del cliente para que usted tome decisiones más rápidas, informadas y estratégicas.</p>
+          </div>
+          
+          <div class="card fade-in">
+            <img src="assets/img/ilustraciones/icon-automation.svg" alt="" class="card-icon" aria-hidden="true">
+            <h3>Automatización y Agentes Inteligentes</h3>
+            <p>Implemente agentes de IA y sistemas RAG (Generación Aumentada por Recuperación) que gestionan desde la atención al cliente hasta la cadena de suministro con autonomía y precisión, operando 24/7 y aprendiendo de forma continua.</p>
+          </div>
+          
+          <div class="card fade-in">
+            <img src="assets/img/ilustraciones/icon-innovation.svg" alt="" class="card-icon" aria-hidden="true">
+            <h3>Innovación Continua y Ventaja Competitiva</h3>
+            <p>Adopte una cultura de innovación permanente. Le ayudamos a integrar las últimas tendencias en IA, desde modelos generativos hasta soluciones de gobierno ético, asegurando que su empresa no solo compita, sino que lidere el mercado.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Servicios Section -->
+    <section id="servicios">
+      <div class="container">
+        <h2 class="section-title">Nuestros Servicios de Asesoría en IA</h2>
+        <div class="cards-grid">
+          <div class="card fade-in">
+            <img src="assets/img/ilustraciones/icon-strategy.svg" alt="" class="card-icon" aria-hidden="true">
+            <h3>Estrategia de IA Empresarial</h3>
+            <p>Analizamos su negocio para diseñar un roadmap de IA a medida. Identificamos las oportunidades de mayor impacto y definimos una estrategia clara para la adopción, desde la prueba de concepto hasta el escalado en toda la organización.</p>
+          </div>
+          
+          <div class="card fade-in">
+            <img src="assets/img/ilustraciones/icon-robot.svg" alt="" class="card-icon" aria-hidden="true">
+            <h3>Automatización Inteligente de Procesos</h3>
+            <p>Vamos más allá de la automatización tradicional. Implementamos soluciones de IA que optimizan flujos de trabajo complejos, reducen errores y mejoran la eficiencia operativa, conectando sistemas y eliminando cuellos de botella.</p>
+          </div>
+          
+          <div class="card fade-in">
+            <img src="assets/img/ilustraciones/icon-agents.svg" alt="" class="card-icon" aria-hidden="true">
+            <h3>Desarrollo de Agentes de IA y Soluciones RAG</h3>
+            <p>Creamos agentes de IA personalizados y sistemas de Generación Aumentada por Recuperación (RAG) que acceden a su base de conocimiento interna para ofrecer respuestas precisas, potenciar la atención al cliente y automatizar tareas complejas.</p>
+          </div>
+          
+          <div class="card fade-in">
+            <img src="assets/img/ilustraciones/icon-training.svg" alt="" class="card-icon" aria-hidden="true">
+            <h3>Capacitación y Formación en IA</h3>
+            <p>Preparamos a su personal para el futuro del trabajo. Ofrecemos programas de capacitación adaptados a diferentes roles, desde liderazgo ejecutivo hasta equipos técnicos, fomentando una cultura de datos y IA en toda la empresa.</p>
+          </div>
+          
+          <div class="card fade-in">
+            <img src="assets/img/ilustraciones/icon-ethics.svg" alt="" class="card-icon" aria-hidden="true">
+            <h3>Gobierno, Ética y Seguridad de IA</h3>
+            <p>Implemente IA de forma responsable. Le ayudamos a establecer marcos de gobernanza sólidos, garantizar la transparencia y equidad de los modelos, y cumplir con las regulaciones para construir sistemas de IA confiables y seguros.</p>
+          </div>
+          
+          <div class="card fade-in">
+            <img src="assets/img/ilustraciones/icon-scaling.svg" alt="" class="card-icon" aria-hidden="true">
+            <h3>Implementación y Escalado de Soluciones</h3>
+            <p>Le acompañamos en todo el ciclo de vida de la implementación. Desde la integración de la primera solución de IA hasta el escalado a nivel empresarial, asegurando un rendimiento óptimo, monitoreo y mejora continua.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Casos de Uso Section -->
+    <section id="casos">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-eyebrow">Casos de estudio</span>
+          <h2 class="section-title">Casos de Uso e Impacto Real</h2>
+          <p class="section-subtitle">Acompañamos desde el diagnóstico hasta la adopción. Estas historias muestran cómo conectamos estrategia, datos y cultura para generar resultados sostenibles.</p>
+        </div>
+
+        <div class="case-grid">
+          <article class="case-card case-card-highlight fade-in">
+            <div class="case-card-header">
+              <span class="case-sector">Retail de Consumo Masivo</span>
+              <span class="case-pill">Supply Chain</span>
+            </div>
+            <h3>Optimización Integral de Inventarios</h3>
+            <p>Orquestamos modelos de forecasting y agentes autónomos que ajustan demanda, abastecimiento y logística en tiempo real para 320 tiendas.</p>
+            <ul class="case-points">
+              <li><strong>Desafío:</strong> Roturas de stock recurrentes y sobreinventario en bodegas regionales.</li>
+              <li><strong>Solución:</strong> Plataforma de planeación con gemelo digital, alertas tempranas y reposición automática.</li>
+            </ul>
+            <div class="case-results">
+              <div class="result-item">
+                <span class="result-value">35%</span>
+                <span class="result-label">Menos quiebres de stock</span>
+              </div>
+              <div class="result-item">
+                <span class="result-value">25%</span>
+                <span class="result-label">Ahorro en almacenamiento</span>
+              </div>
+              <div class="result-item">
+                <span class="result-value">15%</span>
+                <span class="result-label">Más precisión en la demanda</span>
+              </div>
+            </div>
+            <a class="case-cta" href="#contacto">Solicitar briefing ejecutivo</a>
+          </article>
+
+          <article class="case-card fade-in">
+            <div class="case-card-header">
+              <span class="case-sector">Servicios Financieros</span>
+              <span class="case-pill">Experiencia de Cliente</span>
+            </div>
+            <h3>Personalización con RAG y Copilotos</h3>
+            <p>Desplegamos un ecosistema de asistentes que consultan documentación interna y CRM para ofrecer respuestas contextualizadas en milisegundos.</p>
+            <ul class="case-points">
+              <li>Entrenamiento continuo con datos anonimizados para cumplir normativas.</li>
+              <li>Integración con canales web, app móvil y WhatsApp Business.</li>
+            </ul>
+            <div class="case-results">
+              <div class="result-item">
+                <span class="result-value">40%</span>
+                <span class="result-label">Mayor resolución en primer contacto</span>
+              </div>
+              <div class="result-item">
+                <span class="result-value">20%</span>
+                <span class="result-label">Incremento en NPS</span>
+              </div>
+              <div class="result-item">
+                <span class="result-value">30%</span>
+                <span class="result-label">Reducción del tiempo de espera</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="case-card fade-in">
+            <div class="case-card-header">
+              <span class="case-sector">Servicios Profesionales</span>
+              <span class="case-pill">Operaciones</span>
+            </div>
+            <h3>Automatización Documental Inteligente</h3>
+            <p>Implementamos pipelines de extracción, validación y archivo inteligente para contratos, facturas y reportes regulatorios.</p>
+            <ul class="case-points">
+              <li>Modelos de visión y lenguaje con auditoría y trazabilidad.</li>
+              <li>Alertas de cumplimiento y detección de inconsistencias en segundos.</li>
+            </ul>
+            <div class="case-results">
+              <div class="result-item">
+                <span class="result-value">80%</span>
+                <span class="result-label">Menos tiempo de procesamiento</span>
+              </div>
+              <div class="result-item">
+                <span class="result-value">100%</span>
+                <span class="result-label">Eliminación de errores manuales</span>
+              </div>
+              <div class="result-item">
+                <span class="result-value">25h</span>
+                <span class="result-label">Horas semanales liberadas</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="case-card fade-in">
+            <div class="case-card-header">
+              <span class="case-sector">Sector Público</span>
+              <span class="case-pill">Ciudadanía Digital</span>
+            </div>
+            <h3>Gestión Predictiva de Trámites</h3>
+            <p>Modernizamos ventanillas de atención con analítica prescriptiva, asistentes multilingües y automatización de expedientes.</p>
+            <ul class="case-points">
+              <li>Paneles operativos para seguimiento en tiempo real y SLAs adaptativos.</li>
+              <li>Protocolos de privacidad y documentación para auditorías externas.</li>
+            </ul>
+            <div class="case-results">
+              <div class="result-item">
+                <span class="result-value">62%</span>
+                <span class="result-label">Reducción en tiempos de respuesta</span>
+              </div>
+              <div class="result-item">
+                <span class="result-value">4.8</span>
+                <span class="result-label">Satisfacción ciudadana (sobre 5)</span>
+              </div>
+              <div class="result-item">
+                <span class="result-value">18</span>
+                <span class="result-label">Procesos digitalizados en 6 meses</span>
+              </div>
+            </div>
+          </article>
+        </div>
+        
+        <!-- Ahorro de Tiempo -->
+        <div class="time-savings-section fade-in">
+          <h3 class="subsection-title">Ahorro de Tiempo por Área Empresarial</h3>
+          <div class="time-savings-grid">
+            <div class="time-saving-card">
+              <div class="saving-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                </svg>
+              </div>
+              <h4>Atención al Cliente</h4>
+              <div class="progress-bar">
+                <div class="progress-fill" data-percent="70"></div>
+              </div>
+              <p class="percent-label">70% de ahorro</p>
+            </div>
+            
+            <div class="time-saving-card">
+              <div class="saving-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+                </svg>
+              </div>
+              <h4>Análisis de Datos</h4>
+              <div class="progress-bar">
+                <div class="progress-fill" data-percent="65"></div>
+              </div>
+              <p class="percent-label">65% de ahorro</p>
+            </div>
+            
+            <div class="time-saving-card">
+              <div class="saving-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm2 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+                </svg>
+              </div>
+              <h4>Procesos Administrativos</h4>
+              <div class="progress-bar">
+                <div class="progress-fill" data-percent="60"></div>
+              </div>
+              <p class="percent-label">60% de ahorro</p>
+            </div>
+            
+            <div class="time-saving-card">
+              <div class="saving-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M21.41 11.58l-9-9C12.05 2.22 11.55 2 11 2H4c-1.1 0-2 .9-2 2v7c0 .55.22 1.05.59 1.42l9 9c.36.36.86.58 1.41.58.55 0 1.05-.22 1.41-.59l7-7c.37-.36.59-.86.59-1.41 0-.55-.23-1.06-.59-1.42zM5.5 7C4.67 7 4 6.33 4 5.5S4.67 4 5.5 4 7 4.67 7 5.5 6.33 7 5.5 7z"/>
+                </svg>
+              </div>
+              <h4>Marketing Digital</h4>
+              <div class="progress-bar">
+                <div class="progress-fill" data-percent="55"></div>
+              </div>
+              <p class="percent-label">55% de ahorro</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Portfolio de Casos de Uso -->
+        <div class="use-cases-portfolio fade-in">
+          <h3 class="subsection-title">Portafolio de Soluciones de IA</h3>
+          <p class="subsection-description">Descubra cómo diferentes casos de uso se adaptan a las necesidades de su negocio</p>
+          
+          <div class="use-cases-categories">
+            <div class="category-tabs">
+              <button class="tab-btn active" data-category="all">Todos</button>
+              <button class="tab-btn" data-category="quick-wins">Victorias Rápidas</button>
+              <button class="tab-btn" data-category="strategic">Proyectos Estratégicos</button>
+              <button class="tab-btn" data-category="transformational">Transformación</button>
+            </div>
+            
+            <div class="use-cases-grid">
+              <!-- Quick Wins -->
+              <div class="use-case-card" data-category="quick-wins" data-impact="9" data-ease="8">
+                <div class="use-case-badge quick-win">Victoria Rápida</div>
+                <div class="use-case-icon">🤖</div>
+                <h4>Chatbots de Atención</h4>
+                <p>Respuestas automáticas 24/7 con integración a sistemas existentes</p>
+                <div class="use-case-metrics">
+                  <div class="metric-item">
+                    <span class="metric-icon">⚡</span>
+                    <span>Implementación: 2-4 semanas</span>
+                  </div>
+                  <div class="metric-item">
+                    <span class="metric-icon">📊</span>
+                    <span>Impacto: Muy Alto</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="use-case-card" data-category="quick-wins" data-impact="9" data-ease="6">
+                <div class="use-case-badge quick-win">Victoria Rápida</div>
+                <div class="use-case-icon">📝</div>
+                <h4>Extracción de Datos</h4>
+                <p>Procesamiento automático de facturas y documentos</p>
+                <div class="use-case-metrics">
+                  <div class="metric-item">
+                    <span class="metric-icon">⚡</span>
+                    <span>Implementación: 3-5 semanas</span>
+                  </div>
+                  <div class="metric-item">
+                    <span class="metric-icon">📊</span>
+                    <span>Impacto: Muy Alto</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="use-case-card" data-category="quick-wins" data-impact="8" data-ease="7">
+                <div class="use-case-badge quick-win">Victoria Rápida</div>
+                <div class="use-case-icon">✉️</div>
+                <h4>Email Inteligente</h4>
+                <p>Clasificación y respuestas automáticas personalizadas</p>
+                <div class="use-case-metrics">
+                  <div class="metric-item">
+                    <span class="metric-icon">⚡</span>
+                    <span>Implementación: 2-3 semanas</span>
+                  </div>
+                  <div class="metric-item">
+                    <span class="metric-icon">📊</span>
+                    <span>Impacto: Alto</span>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Strategic Projects -->
+              <div class="use-case-card" data-category="strategic" data-impact="9" data-ease="4">
+                <div class="use-case-badge strategic">Estratégico</div>
+                <div class="use-case-icon">📈</div>
+                <h4>Predicción de Demanda</h4>
+                <p>Modelos de forecasting para optimizar inventarios</p>
+                <div class="use-case-metrics">
+                  <div class="metric-item">
+                    <span class="metric-icon">⚡</span>
+                    <span>Implementación: 8-12 semanas</span>
+                  </div>
+                  <div class="metric-item">
+                    <span class="metric-icon">📊</span>
+                    <span>Impacto: Muy Alto</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="use-case-card" data-category="strategic" data-impact="8" data-ease="4">
+                <div class="use-case-badge strategic">Estratégico</div>
+                <div class="use-case-icon">🎯</div>
+                <h4>Personalización Avanzada</h4>
+                <p>Sistemas de recomendación basados en comportamiento</p>
+                <div class="use-case-metrics">
+                  <div class="metric-item">
+                    <span class="metric-icon">⚡</span>
+                    <span>Implementación: 10-14 semanas</span>
+                  </div>
+                  <div class="metric-item">
+                    <span class="metric-icon">📊</span>
+                    <span>Impacto: Alto</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="use-case-card" data-category="strategic" data-impact="7" data-ease="5">
+                <div class="use-case-badge strategic">Estratégico</div>
+                <div class="use-case-icon">🔍</div>
+                <h4>Detección de Anomalías</h4>
+                <p>Identificación proactiva de fraudes y errores</p>
+                <div class="use-case-metrics">
+                  <div class="metric-item">
+                    <span class="metric-icon">⚡</span>
+                    <span>Implementación: 6-10 semanas</span>
+                  </div>
+                  <div class="metric-item">
+                    <span class="metric-icon">📊</span>
+                    <span>Impacto: Alto</span>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Transformational -->
+              <div class="use-case-card" data-category="transformational" data-impact="9" data-ease="3">
+                <div class="use-case-badge transformational">Transformación</div>
+                <div class="use-case-icon">🧠</div>
+                <h4>Asistente Empresarial IA</h4>
+                <p>Agente autónomo que gestiona múltiples procesos</p>
+                <div class="use-case-metrics">
+                  <div class="metric-item">
+                    <span class="metric-icon">⚡</span>
+                    <span>Implementación: 12-20 semanas</span>
+                  </div>
+                  <div class="metric-item">
+                    <span class="metric-icon">📊</span>
+                    <span>Impacto: Muy Alto</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="use-case-card" data-category="transformational" data-impact="8" data-ease="3">
+                <div class="use-case-badge transformational">Transformación</div>
+                <div class="use-case-icon">🏭</div>
+                <h4>Optimización de Supply Chain</h4>
+                <p>Sistema integral de gestión predictiva de cadena de suministro</p>
+                <div class="use-case-metrics">
+                  <div class="metric-item">
+                    <span class="metric-icon">⚡</span>
+                    <span>Implementación: 16-24 semanas</span>
+                  </div>
+                  <div class="metric-item">
+                    <span class="metric-icon">📊</span>
+                    <span>Impacto: Alto</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="use-case-card" data-category="transformational" data-impact="6" data-ease="7">
+                <div class="use-case-badge transformational">Transformación</div>
+                <div class="use-case-icon">💼</div>
+                <h4>Automatización de Workflows</h4>
+                <p>Integración completa de procesos con IA</p>
+                <div class="use-case-metrics">
+                  <div class="metric-item">
+                    <span class="metric-icon">⚡</span>
+                    <span>Implementación: 8-14 semanas</span>
+                  </div>
+                  <div class="metric-item">
+                    <span class="metric-icon">📊</span>
+                    <span>Impacto: Medio-Alto</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Programas de Acompañamiento -->
+    <section class="programs-section">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-eyebrow">Aceleradores y playbooks</span>
+          <h2 class="section-title">Programas que reducen riesgo y aceleran adopción</h2>
+          <p class="section-subtitle">Integramos estrategia, tecnología y cambio cultural con paquetes diseñados para escalar en semanas.</p>
+        </div>
+
+        <div class="programs-grid">
+          <article class="program-card fade-in">
+            <div class="program-header">
+              <span class="program-tag">4 semanas</span>
+              <span class="program-name">AI Discovery Sprint</span>
+            </div>
+            <p>Mapeo de oportunidades, análisis de datos disponibles y business case financiero con roadmap ejecutable.</p>
+            <ul class="program-list">
+              <li>Diagnóstico de madurez y riesgos.</li>
+              <li>Inventario de datos y evaluación legal.</li>
+              <li>Cartera priorizada de casos de uso.</li>
+            </ul>
+            <a class="program-cta" href="#contacto">Solicitar agenda</a>
+          </article>
+
+          <article class="program-card fade-in">
+            <div class="program-header">
+              <span class="program-tag">8 semanas</span>
+              <span class="program-name">AI Factory &amp; Governance</span>
+            </div>
+            <p>Configuración de fábrica ágil de modelos, gobierno responsable y observabilidad orientada a negocio.</p>
+            <ul class="program-list">
+              <li>Estándares MLOps y monitoreo en tiempo real.</li>
+              <li>Políticas Responsible AI y gestión de riesgos.</li>
+              <li>KPIs operativos y financieros para PMO.</li>
+            </ul>
+            <a class="program-cta" href="#contacto">Recibir propuesta</a>
+          </article>
+
+          <article class="program-card fade-in">
+            <div class="program-header">
+              <span class="program-tag">Continuo</span>
+              <span class="program-name">Adoption Enablement</span>
+            </div>
+            <p>Planes de cambio organizacional, academias de IA y acompañamiento para escalar nuevas capacidades.</p>
+            <ul class="program-list">
+              <li>Diseño de journeys y KPIs de adopción.</li>
+              <li>Playbooks por rol y comunidades de práctica.</li>
+              <li>Office hours con especialistas senior.</li>
+            </ul>
+            <a class="program-cta" href="#contacto">Hablar con un experto</a>
+          </article>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Proceso Section -->
+    <section id="proceso">
+      <div class="container">
+        <h2 class="section-title">Nuestro Proceso de Trabajo</h2>
+        <div class="process-steps">
+          <div class="process-step fade-in">
+            <div class="process-number">1</div>
+            <img src="assets/img/ilustraciones/process-diagnosis.svg" alt="" class="process-icon" aria-hidden="true">
+            <h3>Diagnóstico y Análisis Estratégico</h3>
+            <p>Comenzamos con una inmersión profunda en su negocio. Analizamos sus procesos, datos y objetivos para identificar las oportunidades de IA con el mayor retorno de inversión.</p>
+          </div>
+          
+          <div class="process-step fade-in">
+            <div class="process-number">2</div>
+            <img src="assets/img/ilustraciones/process-design.svg" alt="" class="process-icon" aria-hidden="true">
+            <h3>Diseño de la Solución a Medida</h3>
+            <p>Co-creamos una solución personalizada. Diseñamos la arquitectura, seleccionamos los modelos y definimos los KPIs que guiarán el proyecto hacia el éxito.</p>
+          </div>
+          
+          <div class="process-step fade-in">
+            <div class="process-number">3</div>
+            <img src="assets/img/ilustraciones/process-implementation.svg" alt="" class="process-icon" aria-hidden="true">
+            <h3>Implementación Ágil e Integración</h3>
+            <p>Desarrollamos e integramos la solución de IA en sus sistemas existentes de forma ágil y sin interrumpir sus operaciones. Priorizamos la entrega de valor temprano y frecuente.</p>
+          </div>
+          
+          <div class="process-step fade-in">
+            <div class="process-number">4</div>
+            <img src="assets/img/ilustraciones/process-optimization.svg" alt="" class="process-icon" aria-hidden="true">
+            <h3>Optimización y Escalado Continuo</h3>
+            <p>La implementación es solo el comienzo. Monitoreamos el rendimiento, optimizamos los modelos y le ayudamos a escalar la solución en toda la organización para maximizar el impacto a largo plazo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- FAQ Section -->
+    <section id="faq">
+      <div class="container">
+        <h2 class="section-title">Preguntas Frecuentes</h2>
+        <p class="section-subtitle">Todo lo que necesita saber sobre nuestros servicios de IA</p>
+        
+        <div class="faq-container">
+          <!-- Categorías de FAQ -->
+          <div class="faq-categories fade-in">
+            <button class="faq-category-btn active" data-category="all">
+              <span class="category-icon">💡</span>
+              <span>Todas</span>
+            </button>
+            <button class="faq-category-btn" data-category="general">
+              <span class="category-icon">🏢</span>
+              <span>General</span>
+            </button>
+            <button class="faq-category-btn" data-category="technical">
+              <span class="category-icon">⚙️</span>
+              <span>Técnico</span>
+            </button>
+            <button class="faq-category-btn" data-category="business">
+              <span class="category-icon">📊</span>
+              <span>Negocio</span>
+            </button>
+          </div>
+          
+          <!-- Acordeón de Preguntas -->
+          <div class="faq-accordion">
+            <div class="faq-item fade-in" data-category="general">
+              <button class="faq-question-btn" aria-expanded="false">
+                <span class="faq-icon">❓</span>
+                <span class="faq-question-text">¿Qué es la asesoría en IA empresarial?</span>
+                <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-content">
+                  <p>Es un servicio especializado que ayuda a las empresas a identificar, diseñar e implementar soluciones de inteligencia artificial para resolver problemas de negocio, mejorar la eficiencia y crear nuevas oportunidades de crecimiento.</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="faq-item fade-in" data-category="business">
+              <button class="faq-question-btn" aria-expanded="false">
+                <span class="faq-icon">⏱️</span>
+                <span class="faq-question-text">¿Cuánto tiempo se tarda en ver resultados con la IA?</span>
+                <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-content">
+                  <p>Depende de la complejidad del proyecto. Sin embargo, con un enfoque ágil, es posible ver resultados iniciales y un ROI medible en tan solo <strong>3 a 6 meses</strong>, comenzando con pruebas de concepto de alto impacto.</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="faq-item fade-in" data-category="technical">
+              <button class="faq-question-btn" aria-expanded="false">
+                <span class="faq-icon">👥</span>
+                <span class="faq-question-text">¿Necesito un equipo técnico interno para implementar IA?</span>
+                <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-content">
+                  <p>No necesariamente. Nos adaptamos a su estructura. Podemos trabajar de la mano con su equipo técnico, si lo tiene, o gestionar todo el proceso de implementación de principio a fin, incluyendo la capacitación necesaria.</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="faq-item fade-in" data-category="technical">
+              <button class="faq-question-btn" aria-expanded="false">
+                <span class="faq-icon">🤖</span>
+                <span class="faq-question-text">¿Qué son los "Agentes de IA"?</span>
+                <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-content">
+                  <p>Son sistemas de IA avanzados que pueden realizar tareas complejas de forma autónoma, como gestionar la atención al cliente, optimizar la logística o realizar análisis de mercado. Van más allá de la automatización, ya que pueden <strong>razonar y tomar decisiones</strong>.</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="faq-item fade-in" data-category="technical">
+              <button class="faq-question-btn" aria-expanded="false">
+                <span class="faq-icon">🔍</span>
+                <span class="faq-question-text">¿Qué es la tecnología RAG (Retrieval-Augmented Generation)?</span>
+                <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-content">
+                  <p>RAG es un enfoque que permite a los modelos de lenguaje como ChatGPT acceder a información específica y actualizada de una base de datos privada (como los documentos de su empresa) para generar respuestas mucho más <strong>precisas y contextualizadas</strong>.</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="faq-item fade-in" data-category="general">
+              <button class="faq-question-btn" aria-expanded="false">
+                <span class="faq-icon">🛡️</span>
+                <span class="faq-question-text">¿Cómo se garantiza el uso ético y responsable de la IA?</span>
+                <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-content">
+                  <p>La ética es un pilar de nuestro trabajo. Implementamos marcos de gobernanza que aseguran la <strong>transparencia, equidad y explicabilidad</strong> de los modelos. Cumplimos con las regulaciones de privacidad y seguridad para construir una IA en la que pueda confiar.</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="faq-item fade-in" data-category="business">
+              <button class="faq-question-btn" aria-expanded="false">
+                <span class="faq-icon">💰</span>
+                <span class="faq-question-text">¿Qué tipo de retorno de inversión (ROI) puedo esperar?</span>
+                <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-content">
+                  <p>El ROI de la IA se manifiesta de varias formas: reducción de costos operativos, aumento de la productividad, mejora en la toma de decisiones, incremento en ventas y mayor satisfacción del cliente. Según estudios de <strong>McKinsey</strong>, la IA tiene el potencial de agregar billones a la economía global.</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="faq-item fade-in" data-category="general">
+              <button class="faq-question-btn" aria-expanded="false">
+                <span class="faq-icon">🎓</span>
+                <span class="faq-question-text">¿Ofrecen capacitación para nuestros empleados?</span>
+                <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-content">
+                  <p>Sí. Creemos que la adopción exitosa de la IA requiere una cultura preparada. Ofrecemos <strong>programas de formación personalizados</strong> para que sus equipos, desde el liderazgo hasta los operarios, entiendan y aprovechen el poder de la IA.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Testimonios Section -->
+    <section id="testimonios" class="testimonials-section">
+      <div class="container">
+        <div class="testimonials-header fade-in">
+          <span class="section-eyebrow">Confianza de la industria</span>
+          <h2 class="section-title">Líderes que transformaron su organización con IA</h2>
+          <p class="section-subtitle">Mentores, CEOs y responsables de innovación comparten cómo nuestras asesorías guiaron la adopción responsable y rentable.</p>
+        </div>
+
+        <div class="testimonial-slider">
+          <button class="testimonial-nav prev" aria-label="Ver testimonio anterior">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M15 18l-6-6 6-6" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+
+          <div class="testimonial-track" role="list">
+            <article class="testimonial-card" role="listitem">
+              <div class="testimonial-quote">“Pasamos de experimentar con IA generativa a tener copilotos productivos desplegados en tres áreas estratégicas en menos de tres meses.”</div>
+              <div class="testimonial-meta">
+                <div>
+                  <span class="testimonial-name">Valeria López</span>
+                  <span class="testimonial-role">Chief Digital Officer · Grupo Retail LATAM</span>
+                </div>
+                <span class="testimonial-rating">★★★★★</span>
+              </div>
+            </article>
+
+            <article class="testimonial-card" role="listitem">
+              <div class="testimonial-quote">“El enfoque de gobierno y riesgos nos ayudó a obtener la aprobación de compliance y del directorio sin fricciones. Hoy monitoreamos nuestros modelos con dashboards vivos.”</div>
+              <div class="testimonial-meta">
+                <div>
+                  <span class="testimonial-name">Marco Díaz</span>
+                  <span class="testimonial-role">VP de Riesgos · Banco Continental</span>
+                </div>
+                <span class="testimonial-rating">★★★★★</span>
+              </div>
+            </article>
+
+            <article class="testimonial-card" role="listitem">
+              <div class="testimonial-quote">“Logramos unificar datos dispares, crear un catálogo de casos priorizados y capacitar a más de 500 colaboradores con una academia interna de IA.”</div>
+              <div class="testimonial-meta">
+                <div>
+                  <span class="testimonial-name">Renata Guimarães</span>
+                  <span class="testimonial-role">Directora de Innovación · Manufactura Andina</span>
+                </div>
+                <span class="testimonial-rating">★★★★☆</span>
+              </div>
+            </article>
+
+            <article class="testimonial-card" role="listitem">
+              <div class="testimonial-quote">“La metodología combina visión estratégica con entregables tácticos. En seis semanas teníamos un piloto en producción y un modelo de gobernanza aprobado.”</div>
+              <div class="testimonial-meta">
+                <div>
+                  <span class="testimonial-name">Andrés Molina</span>
+                  <span class="testimonial-role">CEO · GovTech City Lab</span>
+                </div>
+                <span class="testimonial-rating">★★★★★</span>
+              </div>
+            </article>
+          </div>
+
+          <button class="testimonial-nav next" aria-label="Ver siguiente testimonio">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="testimonial-dots" role="tablist" aria-label="Seleccionar testimonio">
+          <button type="button" class="testimonial-dot active" aria-label="Testimonio 1" data-index="0"></button>
+          <button type="button" class="testimonial-dot" aria-label="Testimonio 2" data-index="1"></button>
+          <button type="button" class="testimonial-dot" aria-label="Testimonio 3" data-index="2"></button>
+          <button type="button" class="testimonial-dot" aria-label="Testimonio 4" data-index="3"></button>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Contacto Section -->
+    <section id="contacto" class="contact-section">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-intro fade-in">
+            <span class="section-eyebrow">Construyamos juntos</span>
+            <h2 class="section-title">Cuéntenos sobre su reto de inteligencia artificial</h2>
+            <p class="section-subtitle">Reservamos sesiones ejecutivas sin costo para mapear oportunidades, priorizar iniciativas y definir el plan de impacto en menos de 45 minutos.</p>
+            <div class="contact-highlights">
+              <div class="contact-highlight">
+                <span class="highlight-icon">🗺️</span>
+                <span>Blueprint personalizado de oportunidades en 72 horas.</span>
+              </div>
+              <div class="contact-highlight">
+                <span class="highlight-icon">🛡️</span>
+                <span>Checklist de gobernanza y riesgos listo para presentar al directorio.</span>
+              </div>
+              <div class="contact-highlight">
+                <span class="highlight-icon">🤝</span>
+                <span>Equipo senior acompañando desde el kickoff hasta la adopción.</span>
+              </div>
+            </div>
+            <div class="contact-channels">
+              <a class="channel-link" href="mailto:contacto@example.com">
+                <span class="channel-icon">✉️</span>
+                <span>contacto@example.com</span>
+              </a>
+              <a class="channel-link" data-whatsapp-link href="#">
+                <span class="channel-icon">💬</span>
+                <span>Hablar por WhatsApp</span>
+              </a>
+            </div>
+          </div>
+
+          <form class="contact-form fade-in" id="contact-form" novalidate>
+            <div class="form-row">
+              <label for="name">Nombre y apellido</label>
+              <input type="text" id="name" name="name" placeholder="Ingrese su nombre" required>
+            </div>
+
+            <div class="form-row form-row-grid">
+              <div>
+                <label for="email">Correo corporativo</label>
+                <input type="email" id="email" name="email" placeholder="nombre@empresa.com" required>
+              </div>
+              <div>
+                <label for="company">Empresa</label>
+                <input type="text" id="company" name="company" placeholder="Nombre de la organización" required>
+              </div>
+            </div>
+
+            <div class="form-row form-row-grid">
+              <div>
+                <label for="industry">Industria</label>
+                <select id="industry" name="industry" required>
+                  <option value="" disabled selected>Seleccione una opción</option>
+                  <option value="finanzas">Servicios financieros</option>
+                  <option value="retail">Retail y ecommerce</option>
+                  <option value="manufactura">Manufactura</option>
+                  <option value="gobierno">Sector público</option>
+                  <option value="salud">Salud</option>
+                  <option value="otro">Otro</option>
+                </select>
+              </div>
+              <div>
+                <label for="stage">Etapa del proyecto</label>
+                <select id="stage" name="stage" required>
+                  <option value="" disabled selected>¿En qué momento se encuentra?</option>
+                  <option value="exploracion">Exploración / idea inicial</option>
+                  <option value="piloto">Piloto en marcha</option>
+                  <option value="escalado">Proyecto en escalado</option>
+                  <option value="governance">Necesitamos gobernanza / cumplimiento</option>
+                </select>
+              </div>
+            </div>
+
+            <fieldset class="form-row">
+              <legend>Horizonte de inversión</legend>
+              <div class="option-chips">
+                <label class="chip">
+                  <input type="radio" name="budget" value="20k" required>
+                  <span>Hasta USD 20k</span>
+                </label>
+                <label class="chip">
+                  <input type="radio" name="budget" value="50k">
+                  <span>USD 20k - 50k</span>
+                </label>
+                <label class="chip">
+                  <input type="radio" name="budget" value="100k">
+                  <span>USD 50k - 100k</span>
+                </label>
+                <label class="chip">
+                  <input type="radio" name="budget" value="100k+">
+                  <span>Más de USD 100k</span>
+                </label>
+              </div>
+            </fieldset>
+
+            <div class="form-row">
+              <label for="message">Contexto y objetivos</label>
+              <textarea id="message" name="message" rows="4" placeholder="Compártanos metas, plazos y equipos involucrados" required></textarea>
+            </div>
+
+            <div class="form-row form-consent">
+              <label class="checkbox">
+                <input type="checkbox" name="consent" required>
+                <span>Autorizo que me contacten para coordinar la sesión exploratoria y recibir materiales.</span>
+              </label>
+            </div>
+
+            <div class="form-footer">
+              <button type="submit" class="btn btn-primary">Agendar una llamada</button>
+              <p class="form-helper">Tiempo de respuesta promedio: <strong>&lt; 24 horas</strong> hábiles.</p>
+            </div>
+
+            <p class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="donaciones">
+      <div class="container">
+        <h2>Apoye la Democratización de la Inteligencia Artificial</h2>
+        <p>Su donación nos permite continuar investigando y creando recursos abiertos para que más empresas, emprendedores y organizaciones sin fines de lucro puedan acceder a las ventajas de la inteligencia artificial de forma ética y responsable. Cada contribución impulsa la innovación inclusiva.</p>
+        <button class="btn btn-accent btn-lg" data-action="open-donation">Donar Ahora</button>
+        <p style="margin-top: 2rem; opacity: 0.9;">¿Tiene un proyecto en mente? <a href="mailto:contacto@example.com" style="color: white; text-decoration: underline;">Hablemos</a></p>
+      </div>
+    </section>
+  </main>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Asesorías IA</h4>
+          <p>Transformando negocios con inteligencia artificial de forma ética y responsable.</p>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Enlaces</h4>
+          <ul class="footer-links">
+            <li><a href="politicas-privacidad.html">Políticas de Privacidad</a></li>
+            <li><a href="terminos.html">Términos y Condiciones</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Contacto</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:contacto@example.com">contacto@example.com</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 Asesorías en IA. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Modal de Donación -->
+  <div class="modal" id="donation-modal" role="dialog" aria-labelledby="modal-title" aria-modal="true">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="modal-title">Apoyar el Proyecto</h3>
+        <button class="modal-close" id="close-donation-modal" aria-label="Cerrar modal">&times;</button>
+      </div>
+      
+      <div class="modal-body">
+        <p class="modal-description">Elija su moneda preferida para realizar el pago de forma segura</p>
+        
+        <div class="currency-grid">
+          <!-- Peso Mexicano -->
+          <a href="https://buy.stripe.com/00wdR2bW04azecQ1Cq3wQ05" class="currency-card" target="_blank" rel="noopener noreferrer">
+            <div class="currency-flag">🇲🇽</div>
+            <div class="currency-info">
+              <span class="currency-code">MXN</span>
+              <span class="currency-name">Peso Mexicano</span>
+            </div>
+            <svg class="currency-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+            </svg>
+          </a>
+          
+          <!-- Dólar Estadounidense -->
+          <a href="https://buy.stripe.com/9B64gsbW08qPecQ2Gu3wQ06" class="currency-card" target="_blank" rel="noopener noreferrer">
+            <div class="currency-flag">🇺🇸</div>
+            <div class="currency-info">
+              <span class="currency-code">USD</span>
+              <span class="currency-name">Dólar Estadounidense</span>
+            </div>
+            <svg class="currency-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+            </svg>
+          </a>
+          
+          <!-- Euro -->
+          <a href="https://buy.stripe.com/14A3cogcg5eDb0Eepc3wQ07" class="currency-card" target="_blank" rel="noopener noreferrer">
+            <div class="currency-flag">🇪🇺</div>
+            <div class="currency-info">
+              <span class="currency-code">EUR</span>
+              <span class="currency-name">Euro</span>
+            </div>
+            <svg class="currency-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+            </svg>
+          </a>
+          
+          <!-- Peso Colombiano -->
+          <a href="https://buy.stripe.com/3cI8wI4tycH5gkYdl83wQ08" class="currency-card" target="_blank" rel="noopener noreferrer">
+            <div class="currency-flag">🇨🇴</div>
+            <div class="currency-info">
+              <span class="currency-code">COP</span>
+              <span class="currency-name">Peso Colombiano</span>
+            </div>
+            <svg class="currency-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+            </svg>
+          </a>
+        </div>
+        
+        <div class="payment-security">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/>
+          </svg>
+          <span>Pagos procesados de forma segura con Stripe</span>
+        </div>
+      </div>
+      
+      <div class="modal-footer">
+        <p>🔒 Transacciones seguras • No almacenamos datos de tarjeta • Procesado por Stripe</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Scripts -->
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
+
