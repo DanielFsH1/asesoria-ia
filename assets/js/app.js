@@ -23,6 +23,7 @@
     initTheme();
     initMobileMenu();
     initDonationModal();
+    enhanceImages();
     initSmoothScroll();
     initAnimations();
     initAccessibility();
@@ -96,9 +97,14 @@
     
     if (!menuToggle || !mobileMenuOverlay) return;
 
+    // Accesibilidad: relacionar botón con menú
+    menuToggle.setAttribute('aria-controls', 'mobile-menu');
+    menuToggle.setAttribute('aria-expanded', 'false');
+
     menuToggle.addEventListener('click', function() {
       mobileMenuOverlay.classList.add('active');
       document.body.style.overflow = 'hidden';
+      menuToggle.setAttribute('aria-expanded', 'true');
       trapFocus(mobileMenuOverlay);
     });
 
@@ -125,6 +131,8 @@
     if (mobileMenuOverlay) {
       mobileMenuOverlay.classList.remove('active');
       document.body.style.overflow = '';
+      const menuToggle = document.getElementById('mobile-menu-toggle');
+      if (menuToggle) menuToggle.setAttribute('aria-expanded', 'false');
     }
   }
 
@@ -142,6 +150,8 @@
       btn.addEventListener('click', function(e) {
         e.preventDefault();
         openDonationModal();
+        // Estado accesible del botón disparador
+        btn.setAttribute('aria-expanded', 'true');
       });
     });
 
@@ -164,12 +174,31 @@
         closeDonationModal();
       }
     });
+
+    // Configurar enlaces de moneda desde config.js
+    try {
+      const currencyCards = donationModal.querySelectorAll('.currency-card[data-currency]');
+      currencyCards.forEach(card => {
+        const code = card.getAttribute('data-currency');
+        const url = STRIPE_LINKS && STRIPE_LINKS[code];
+        if (url) {
+          card.setAttribute('href', url);
+        } else {
+          // Si faltara configuración, deshabilitar tarjeta
+          card.setAttribute('aria-disabled', 'true');
+          card.addEventListener('click', (ev) => ev.preventDefault());
+        }
+      });
+    } catch (_) {
+      // En caso de que STRIPE_LINKS no esté definido, no romper la UI
+    }
   }
 
   function openDonationModal() {
     if (!donationModal) return;
     
     donationModal.classList.add('active');
+    donationModal.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';
     trapFocus(donationModal);
   }
@@ -178,7 +207,10 @@
     if (!donationModal) return;
     
     donationModal.classList.remove('active');
+    donationModal.setAttribute('aria-hidden', 'true');
     document.body.style.overflow = '';
+    const triggers = document.querySelectorAll('[data-action="open-donation"]');
+    triggers.forEach(t => t.setAttribute('aria-expanded', 'false'));
   }
 
   // ============================================
@@ -201,7 +233,9 @@
         const target = document.querySelector(href);
         if (target) {
           e.preventDefault();
-          const offsetTop = target.offsetTop - 80; // Ajustar por header fijo
+          const header = document.querySelector('.header');
+          const headerHeight = header ? header.offsetHeight : 80;
+          const offsetTop = target.getBoundingClientRect().top + window.scrollY - headerHeight;
           
           window.scrollTo({
             top: offsetTop,
@@ -209,6 +243,22 @@
           });
         }
       });
+    });
+  }
+
+  // ============================================
+  // IMÁGENES: LAZY/ASYNC
+  // ============================================
+
+  function enhanceImages() {
+    const imgs = document.querySelectorAll('img');
+    imgs.forEach(img => {
+      if (!img.hasAttribute('loading')) {
+        img.setAttribute('loading', 'lazy');
+      }
+      if (!img.hasAttribute('decoding')) {
+        img.setAttribute('decoding', 'async');
+      }
     });
   }
 
@@ -223,7 +273,7 @@
     if (prefersReducedMotion) return;
 
     const observerOptions = {
-      threshold: ANIMATION_CONFIG.observerThreshold,
+      threshold: 0.1,
       rootMargin: '0px 0px -50px 0px'
     };
 

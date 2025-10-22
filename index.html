@@ -3,37 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="robots" content="noindex,nofollow">
-  <meta name="theme-color" content="#FFFFFF">
+  <title>Asesorías en Inteligencia Artificial | Transforme su Negocio</title>
   <meta name="description" content="Asesorías personalizadas en Inteligencia Artificial para transformar su negocio. Automatización, agentes de IA, RAG, estrategia y gobierno ético.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://asesoria-ia.vercel.app/">
+  <meta name="theme-color" content="#3B82F6" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0F172A" media="(prefers-color-scheme: dark)">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="manifest" href="/manifest.webmanifest">
   
   <!-- Open Graph -->
   <meta property="og:title" content="Asesorías en Inteligencia Artificial | Transforme su Negocio">
   <meta property="og:description" content="Descubra cómo nuestras asesorías en IA pueden automatizar procesos, optimizar decisiones y desbloquear crecimiento exponencial.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/img/og-image.png">
+  <meta property="og:url" content="https://asesoria-ia.vercel.app/">
+  <meta property="og:image" content="https://asesoria-ia.vercel.app/assets/img/og-image.png">
+  <meta property="og:image:alt" content="Asesorías en Inteligencia Artificial">
+  <meta property="og:locale" content="es_ES">
   
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Asesorías en Inteligencia Artificial">
   <meta name="twitter:description" content="Transforme su negocio con IA: automatización, agentes inteligentes y decisiones basadas en datos.">
-  <meta name="twitter:image" content="assets/img/og-image.png">
-  
-  <title>Asesorías en Inteligencia Artificial | Transforme su Negocio</title>
+  <meta name="twitter:image" content="https://asesoria-ia.vercel.app/assets/img/og-image.png">
+  <meta name="twitter:image:alt" content="Asesorías en Inteligencia Artificial">
   
   <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/android-chrome-192x192.png">
   
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- Preconnect para fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   
-  <!-- Styles -->
+  <!-- Styles - Carga crítica -->
   <link rel="stylesheet" href="assets/css/styles.css">
+  
+  <!-- Fonts - Diferidas para no bloquear render -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"></noscript>
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Saltar al contenido</a>
   <!-- Header -->
   <header class="header">
     <div class="container header-container">
@@ -49,7 +62,7 @@
           <li><a href="#testimonios">Testimonios</a></li>
           <li><a href="#faq">FAQ</a></li>
           <li><a href="#contacto">Contacto</a></li>
-          <li><a href="#" class="btn btn-primary" data-action="open-donation">Donar</a></li>
+          <li><a href="#donaciones" class="btn btn-primary">Donar</a></li>
         </ul>
       </nav>
       
@@ -106,7 +119,7 @@
               <span style="margin-left: 0.5rem;">Cambiar Tema</span>
             </button>
           </li>
-          <li><a href="#" class="btn btn-primary" data-action="open-donation">Donar</a></li>
+          <li><a href="#donaciones" class="btn btn-primary">Donar</a></li>
         </ul>
       </nav>
     </div>
@@ -120,7 +133,7 @@
         <h1>Transforme su Negocio con Inteligencia Artificial</h1>
         <p class="lead">Descubra cómo nuestras asesorías personalizadas en IA pueden automatizar sus procesos, optimizar la toma de decisiones y desbloquear un crecimiento exponencial. Deje que la innovación impulse sus resultados.</p>
         <div class="hero-cta">
-          <button class="btn btn-primary btn-lg" data-action="open-donation">Donar</button>
+    <button class="btn btn-primary btn-lg" data-action="open-donation" aria-controls="donation-modal" aria-expanded="false">Donar</button>
           <a href="#servicios" class="btn btn-secondary btn-lg">Conozca Nuestras Asesorías</a>
         </div>
       </div>
@@ -1092,7 +1105,7 @@
   </footer>
   
   <!-- Modal de Donación -->
-  <div class="modal" id="donation-modal" role="dialog" aria-labelledby="modal-title" aria-modal="true">
+  <div class="modal" id="donation-modal" role="dialog" aria-labelledby="modal-title" aria-modal="true" aria-hidden="true">
     <div class="modal-content">
       <div class="modal-header">
         <h3 id="modal-title">Apoyar el Proyecto</h3>
@@ -1104,7 +1117,7 @@
         
         <div class="currency-grid">
           <!-- Peso Mexicano -->
-          <a href="https://buy.stripe.com/00wdR2bW04azecQ1Cq3wQ05" class="currency-card" target="_blank" rel="noopener noreferrer">
+          <a href="#" class="currency-card" data-currency="MXN" target="_blank" rel="noopener noreferrer">
             <div class="currency-flag">🇲🇽</div>
             <div class="currency-info">
               <span class="currency-code">MXN</span>
@@ -1116,7 +1129,7 @@
           </a>
           
           <!-- Dólar Estadounidense -->
-          <a href="https://buy.stripe.com/9B64gsbW08qPecQ2Gu3wQ06" class="currency-card" target="_blank" rel="noopener noreferrer">
+          <a href="#" class="currency-card" data-currency="USD" target="_blank" rel="noopener noreferrer">
             <div class="currency-flag">🇺🇸</div>
             <div class="currency-info">
               <span class="currency-code">USD</span>
@@ -1128,7 +1141,7 @@
           </a>
           
           <!-- Euro -->
-          <a href="https://buy.stripe.com/14A3cogcg5eDb0Eepc3wQ07" class="currency-card" target="_blank" rel="noopener noreferrer">
+          <a href="#" class="currency-card" data-currency="EUR" target="_blank" rel="noopener noreferrer">
             <div class="currency-flag">🇪🇺</div>
             <div class="currency-info">
               <span class="currency-code">EUR</span>
@@ -1140,7 +1153,7 @@
           </a>
           
           <!-- Peso Colombiano -->
-          <a href="https://buy.stripe.com/3cI8wI4tycH5gkYdl83wQ08" class="currency-card" target="_blank" rel="noopener noreferrer">
+          <a href="#" class="currency-card" data-currency="COP" target="_blank" rel="noopener noreferrer">
             <div class="currency-flag">🇨🇴</div>
             <div class="currency-info">
               <span class="currency-code">COP</span>
@@ -1166,9 +1179,9 @@
     </div>
   </div>
   
-  <!-- Scripts -->
-  <script src="assets/js/config.js"></script>
-  <script src="assets/js/app.js"></script>
+  <!-- Scripts - Diferidos para no bloquear render -->
+  <script src="assets/js/config.js" defer></script>
+  <script src="assets/js/app.js" defer></script>
 </body>
 </html>
 

@@ -1,21 +1,27 @@
 {
   "name": "Asesorías en Inteligencia Artificial",
   "short_name": "Asesorías IA",
-  "start_url": "/index.html",
+  "start_url": "/",
+  "scope": "/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#2563EB",
+  "theme_color": "#3B82F6",
   "description": "Asesorías personalizadas en Inteligencia Artificial para transformar su negocio.",
+  "orientation": "any",
   "icons": [
     {
       "src": "assets/img/favicon/android-chrome-192x192.png",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     },
     {
       "src": "assets/img/favicon/android-chrome-512x512.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     }
-  ]
+  ],
+  "categories": ["business", "productivity"],
+  "lang": "es"
 }
